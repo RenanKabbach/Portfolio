@@ -85,6 +85,9 @@ header {
 .cards {
   max-width: 800px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
 .card {
@@ -94,17 +97,21 @@ header {
 
 .card__image-container img {
   width: 100%;
+  height: 200px;
   border-radius: 10px;
 }
 
-.card__content,
-.card__info {
-  padding: 24px;
+.card__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
 }
 
 .card__info {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding: 16px;
 }
 
 .card__info a {
@@ -120,7 +127,7 @@ header {
 .card__button {
   background-color: var(--color-rocket);
   filter: brightness(90%);
-  padding: 5px 20px;
+  padding: 8px 16px;
   border-radius: 20px;
   text-align: center;
   margin: 0 16px;
