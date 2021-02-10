@@ -131,6 +131,9 @@ header {
   border-radius: 20px;
   text-align: center;
   margin: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card__info a i {
